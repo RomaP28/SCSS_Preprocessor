@@ -1,0 +1,4 @@
+All styles for the dark and light themes wrote in _main.scss
+You can switch styles manually by pressing the button 'Join us'.
+The style1.css and style2.css are generated from source files via scss compiler koala.
+When press button 'Join us' page is switched to use styles2.css by changing link to <link rel=“stylesheet" href="css/style2.css"> and opposite.
