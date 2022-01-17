@@ -1,0 +1,188 @@
+// Write your styles here
+body{
+  margin:0;
+  padding: 0;
+}
+.header{
+  background: $backgoundImage;
+  background-size: cover;
+  padding: 20px 80px 90px 80px;
+  border-bottom-right-radius: 800px 150px;
+  .header-wrap{
+    color:$textcolor;
+    font-family: 'Hind';
+  }
+  .landing-logo {
+    display: flex;
+    align-items: center;
+    p{
+      font-family: 'Hind';
+      font-size: large;
+      padding: 0px;
+      margin-left: 10px;
+      line-height: 0.8em;
+    }
+    span{
+      font-size: xx-small;
+      display: block;
+      padding: 0;
+      margin-left:4px;
+    }
+  }
+}
+
+
+@mixin mainfont {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  width: 250px;
+}
+
+@mixin textdecor{
+  color:$textcolor;
+  background: $colorTextHighlight;
+}
+
+@mixin whitecolor {
+  color: white;
+}
+
+
+.header_heading{
+  @include mainfont;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+
+.header_heading::selection {
+  @include textdecor;
+}
+
+.header_text{
+  color:$textcolor;
+  width: 600px;
+}
+
+.forButtons{
+  padding: 15px 52px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: $colorButton;
+}
+
+
+.header_button{
+  @extend .forButtons;
+  margin: 100px 150px 70px 0px;
+  @include whitecolor;
+}
+
+.login{
+  @include whitecolor;
+}
+
+
+.section{
+  position: static;
+  margin-bottom: 120px;
+  .section_text{
+    @include mainfont;
+    margin: 20px auto;
+    font-size: 1.5em;
+  }
+  .section_text::selection {
+    @include textdecor;
+  }
+  .section_card_wrap{
+    width: 70%;    
+    margin: auto;
+    .section_card_right_container{
+      @include whitecolor;
+      float:right;
+      margin: 20px 30px;
+      width: 60%;
+      text-align: center;
+      .section_card_heading{
+        font-style: bold;
+      }
+      .section_card_text{
+        font-size: small;
+        text-align: justify;
+      }
+    }
+    .section_card_img{
+      border-radius: 5px;
+      margin:10px;
+    }
+    .section_card{
+      border-radius: 5px;
+      background-color: $backgoundColor;
+      margin-top:20px;
+    }
+    .section_link  {
+      @include whitecolor;
+    }
+  }
+}
+
+.section_banner{
+  position: relative;
+  width: 75%;
+  left: 12%;
+  height: 100px;
+  bottom:-160px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #679709, #305ECF);
+  .section_banner_text_wrap{
+    float: left;
+    width: 60%;
+    text-align: left;
+    padding-left: 20%;
+    .section_banner_heading{
+      font-family: 'Source Sans Pro';
+      font-weight: bold;
+      font-size: large;
+    }
+    .section_banner_heading::selection{
+      
+      @include textdecor;
+    }
+    .section_banner_text{
+      font-family: $hind;
+      font-size: medium;
+      @include whitecolor;
+    }
+  }
+  .section_banner_button{
+    @extend .forButtons;
+    @include whitecolor;
+    margin-top: 24px;
+  }
+}
+
+.footer{
+  background-color: $backgoundColor;
+  padding: 100px 70px;
+  .footer-wrap{
+    @include whitecolor;
+    .footer_logo{
+      margin: 0px;
+      width: 33%;
+      float: left;
+    }
+    .footer_text{
+      text-align: left;
+      margin: 0px;
+      width: 20%;
+      float: left;
+    }
+    .footer-cr{
+      text-align: center;
+      margin: 0px;
+      width: 33%;
+      float: right;
+    }
+  }
+}

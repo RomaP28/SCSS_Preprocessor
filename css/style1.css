@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  background: url(../img/m-h-day.jpg);
+  background-size: cover;
+  padding: 20px 80px 90px 80px;
+  border-bottom-right-radius: 800px 150px; }
+  .header .header-wrap {
+    color: #2C2F3C;
+    font-family: 'Hind'; }
+  .header .landing-logo {
+    display: flex;
+    align-items: center; }
+    .header .landing-logo p {
+      font-family: 'Hind';
+      font-size: large;
+      padding: 0px;
+      margin-left: 10px;
+      line-height: 0.8em; }
+    .header .landing-logo span {
+      font-size: xx-small;
+      display: block;
+      padding: 0;
+      margin-left: 4px; }
+
+.header_heading {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  width: 250px;
+  font-size: xx-large;
+  font-weight: 700; }
+
+.header_heading::selection {
+  color: #2C2F3C;
+  background: #14A0C7; }
+
+.header_text {
+  color: #2C2F3C;
+  width: 600px; }
+
+.forButtons, .header_button, .section_banner .section_banner_button {
+  padding: 15px 52px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #699900; }
+
+.header_button {
+  margin: 100px 150px 70px 0px;
+  color: white; }
+
+.login {
+  color: white; }
+
+.section {
+  position: static;
+  margin-bottom: 120px; }
+  .section .section_text {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    width: 250px;
+    margin: 20px auto;
+    font-size: 1.5em; }
+  .section .section_text::selection {
+    color: #2C2F3C;
+    background: #14A0C7; }
+  .section .section_card_wrap {
+    width: 70%;
+    margin: auto; }
+    .section .section_card_wrap .section_card_right_container {
+      color: white;
+      float: right;
+      margin: 20px 30px;
+      width: 60%;
+      text-align: center; }
+      .section .section_card_wrap .section_card_right_container .section_card_heading {
+        font-style: bold; }
+      .section .section_card_wrap .section_card_right_container .section_card_text {
+        font-size: small;
+        text-align: justify; }
+    .section .section_card_wrap .section_card_img {
+      border-radius: 5px;
+      margin: 10px; }
+    .section .section_card_wrap .section_card {
+      border-radius: 5px;
+      background-color: #21232E;
+      margin-top: 20px; }
+    .section .section_card_wrap .section_link {
+      color: white; }
+
+.section_banner {
+  position: relative;
+  width: 75%;
+  left: 12%;
+  height: 100px;
+  bottom: -160px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #679709, #305ECF); }
+  .section_banner .section_banner_text_wrap {
+    float: left;
+    width: 60%;
+    text-align: left;
+    padding-left: 20%; }
+    .section_banner .section_banner_text_wrap .section_banner_heading {
+      font-family: 'Source Sans Pro';
+      font-weight: bold;
+      font-size: large; }
+    .section_banner .section_banner_text_wrap .section_banner_heading::selection {
+      color: #2C2F3C;
+      background: #14A0C7; }
+    .section_banner .section_banner_text_wrap .section_banner_text {
+      font-family: "Hind";
+      font-size: medium;
+      color: white; }
+  .section_banner .section_banner_button {
+    color: white;
+    margin-top: 24px; }
+
+.footer {
+  background-color: #21232E;
+  padding: 100px 70px; }
+  .footer .footer-wrap {
+    color: white; }
+    .footer .footer-wrap .footer_logo {
+      margin: 0px;
+      width: 33%;
+      float: left; }
+    .footer .footer-wrap .footer_text {
+      text-align: left;
+      margin: 0px;
+      width: 20%;
+      float: left; }
+    .footer .footer-wrap .footer-cr {
+      text-align: center;
+      margin: 0px;
+      width: 33%;
+      float: right; }
